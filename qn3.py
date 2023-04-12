@@ -1,0 +1,2 @@
+for i in range(7):     # using for loop and giving the range to iterate it through 7 times 
+    print("*"+" "*i+"*")   #  concatinating the * and multiplying the "spaces" as it keeps on incresing in accordance to the i
