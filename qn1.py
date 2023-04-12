@@ -16,19 +16,19 @@
 
 x=int(input("enter the number of years "))
 years=0
-
-while(x<=years):
-  i=0
-  j=0
-  total=0
+i=0
+j=0
+total=0
+while(years<=x):
   while (i<12):
     print("month ",i+1)
     j=int(input("enter the rainfall per month "))
     total=total+j
     i+=1
-  print("total: ",total,"")
-  print("average :",total/12)
-  years=years+1 
+years=years+1
+print("total: ",total,"")
+print("average :",total/12)
+
     
     
     
