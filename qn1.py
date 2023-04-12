@@ -1,33 +1,18 @@
-# #   TAKING INPUt FROM THE USER 
-# x=int(input("enter the number of years: "))
-# for i in range(x):
-#     total_rainfall=0       #  INITIALISING THE RAINFALL AMOUNT
-#     for j in range(12):     # NESTED LOOPING TO ASK FOR THE RAINFALL IN 12 MONTHS AND ITERATING THEM 
-#         j=0
-#         rain=int(input("enetr the rainfall amount for the month :",j+1 ))
-#         # rain+=1
-#         j=j+1
-#     total_rainfall=total_rainfall+rain   # will kepp on adding the new data per month entered
-#     print("the total rainfall is: ",total_rainfall)
-#     print("the average is: ",total_rainfall/12)
-#     i=i+1
-    
-    
-
-x=int(input("enter the number of years "))
-years=0
+   
+x=int(input("enter the number of years "))       # taking the input ffrom user 
+years=0            #   initializing  the value  
 i=0
-j=0
 total=0
-while(years<=x):
-  while (i<12):
+while(years<=x):       # giving condition to run code in loop
+  while (i<12):          # a nested loop to ask for month rainfall
     print("month ",i+1)
     j=int(input("enter the rainfall per month "))
-    total=total+j
     i+=1
-years=years+1
-print("total: ",total,"")
-print("average :",total/12)
+    # j+=1
+    total=total+j           # adds the value with entered amount 
+  print("total: ",total)
+  print("average monthly rainfall:",total/12,"inches")
+  years=years+1
 
     
     
